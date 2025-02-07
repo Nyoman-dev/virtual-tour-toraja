@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('judul');
             $table->string('slug');
             $table->longText('map');
+            $table->longText('video');
             $table->text('deskripsi');
             $table->timestamps();
         });

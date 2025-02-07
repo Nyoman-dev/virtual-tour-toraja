@@ -33,9 +33,9 @@ class DeskripsiWisataController extends Controller
         $validatedData = $request->validate([
             'judul' => 'required | string | min:3',
             'map' => 'required',
+            'video' => 'required',
             'deskripsi' => 'required',
         ]);
-
         DeskripsiWisata::create($validatedData);
         return redirect()->back()->with('success', 'Data berhasil dtambahkan!');
     }
@@ -64,6 +64,7 @@ class DeskripsiWisataController extends Controller
         $validatedData = $request->validate([
             'judul' => 'required | string | min:3',
             'map' => 'required',
+            'video' => 'required',
             'deskripsi' => 'required',
         ]);
         DeskripsiWisata::where('id', $deskripsi_wisatum->id)->update($validatedData);

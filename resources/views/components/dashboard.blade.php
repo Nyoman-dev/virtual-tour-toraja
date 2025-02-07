@@ -70,8 +70,8 @@
                         <span class="text-sm font-medium">Deskripsi Wisata</span>
                     </a>
                 </li>
-                {{-- <li>
-                    <a href="/virtual-tour" class="{{ request()->is('virtual-tour') ? 'side-nav text-blue-500' : 'side-nav dark:text-white text-black'}}">
+                <li>
+                    <button type="button" class="flex items-center w-full pt-2 px-4 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="size-5 opacity-75"
@@ -86,9 +86,20 @@
                             d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
                             />
                         </svg>
-                        <span class="text-sm font-medium">Virtual Tour</span>
-                    </a>
-                </li> --}}
+                        <span class="flex-1 whitespace-nowrap text-sm font-medium">Virtual Tour</span>
+                        <svg class="size-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                        </svg>
+                    </button>
+                    <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                        <li>
+                        <a href="https://app.lapentor.com/" target="_blank" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Virtual Wisata</a>
+                        </li>
+                        <li>
+                        <a href="https://app.lapentor.com/" target="_blank" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Virtual Budaya</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
             <div class="mb-8">
                 <button id="dropdownTopButton" data-dropdown-toggle="dropdownTop" data-dropdown-placement="top" class="me-3 mb-3 md:mb-0 text-white hover:ring-blue-200 focus:ring-1 focus:outline-none focus:ring-blue-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:ring-blue-100 dark:focus:ring-blue-100" type="button">{{ Auth::user()->email }} <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">

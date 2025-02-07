@@ -12,6 +12,7 @@ class DeskripsiWisata extends Model
         'judul',
         'deskripsi',
         'map',
+        'video',
     ];
     public function sluggable(): array
     {

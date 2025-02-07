@@ -25,6 +25,12 @@ Route::get('/tilangga', function () {
 Route::get('/kete-kesu', function () {
     return view('virtual-tour.kete-kesu');
 });
+Route::get('/rambu-solo', function () {
+    return view('virtual-tour.rambu-solo');
+});
+Route::get('/pasar-kerbau', function () {
+    return view('virtual-tour.pasar-kerbau');
+});
 
 // Route::get('/virtual-tour', function () {
 //     return view('dashboard.dashboard-virtual-tour');
