@@ -1,5 +1,5 @@
 <x-layouts>
-    <div class="parallax h-screen" style="background-image: url('/img/home.png');">
+    <div class="parallax h-screen bringhtness-50" style="background-image: url('/img/bg.png');">
         <div class="flex flex-col justify-center items-center text-center h-screen text-white">
             <h1 class="text-6xl font-great-vibes">
             Staycation

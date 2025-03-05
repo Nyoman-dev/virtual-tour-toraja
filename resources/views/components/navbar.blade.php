@@ -16,7 +16,7 @@
               <a href="/" class={{request()->is('/') ? 'dark:text-blue-500 text-blue-500' : 'nav' }}>Home</a>
             </li>
             <li>
-              <a href="/wisata" class={{ request()->is('deskripsi-wisata') ? 'dark:text-blue-500 text-blue-500' : 'nav' }}>Deskripsi Wisata</a>
+              <a href="/wisata" class={{ request()->is('deskripsi-wisata') ? 'dark:text-blue-500 text-blue-500' : 'nav' }}>Wisata & Budaya</a>
             </li>
             <li>
               <a href="/tour" class={{ request()->is('tour') ? 'dark:text-blue-500 text-blue-500' : 'nav' }}>Virtual Tour</a>
