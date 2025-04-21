@@ -4,12 +4,12 @@ use App\Models\DeskripsiWisata;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DeskripsiWisataController;
+use App\Http\Controllers\VisitorsController;
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [VisitorsController::class, 'trackVisitor'])->name('home');
+
 Route::get('/wisata', function () {
-    return view('deskripsi-wisata',[
+    return view('deskripsi-wisata', [
         'wisata' => DeskripsiWisata::all()
     ]);
 });

@@ -7,6 +7,9 @@
             <p class="text-2xl mt-2">
             #DiIndonesiaAja
             </p>
+            <p class="text-lg mt-10 bg-slate-300 px-3 py-2 rounded-lg text-slate-700">
+                Jumlah Pengunjung : {{ $visitorCount }}
+            </p>
         </div>
     </div>
     <section class="bg-white text-black py-20">
